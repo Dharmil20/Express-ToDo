@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="kanban-board">
+        <div class="column-1">
+            <h2>To Do</h2>
+            <button id="add-card" onclick="showInput(1)"><span>Add New</span> <span>+</span></button>
+            <div id="inputContainer" class="hide">
+                <input type="text" id="userInput" placeholder="Enter your text">
+                <button id="submitBtn" onclick="submitInput(1)">Enter</button>
+            </div>
+        </div>        
+
+        <div class="column-2">
+            <h2>In Progress</h2>
+            <button id="add-card" onclick="showInput(2)"><span>Add New</span> <span>+</span></button>
+            <div id="inputContainer" class="hide">
+                <input type="text" id="userInput" placeholder="Enter your text">
+                <button id="submitBtn" onclick="submitInput(2)">Enter</button>
+            </div>
+        </div>
+
+        <div class="column-3">
+            <h2>Under Review</h2>
+            <button id="add-card" onclick="showInput(3)"><span>Add New</span> <span>+</span></button>
+            <div id="inputContainer" class="hide">
+                <input type="text" id="userInput" placeholder="Enter your text">
+                <button id="submitBtn" onclick="submitInput(3)">Enter</button>
+            </div>
+        </div>
+
+        <div class="column-4">
+            <h2>Finished</h2>
+            <button id="add-card" onclick="showInput(4)"><span>Add New</span> <span>+</span></button>
+            <div id="inputContainer" class="hide">
+                <input type="text" id="userInput" placeholder="Enter your text">
+                <button id="submitBtn" onclick="submitInput(4)">Enter</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
